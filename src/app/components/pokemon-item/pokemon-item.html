@@ -1,0 +1,12 @@
+<section class="card" style="max-width: 320px">
+    <img [src]="pokemon()?.fotoUrl" class="card-img-top" [alt]="pokemon()?.nombre">
+    <div class="card-body">
+        <h4 class="card-title">{{pokemon()?.nombre}}</h4>
+        <p class="card-text mb-1"><strong>N.º Pokedex:</strong> #{{pokemon()?.id}}</p>
+        <p class="card-text mb-1"><strong>Tipo:</strong> {{pokemon()?.tipo}}</p>
+        <p class="card-text mb-1"><strong>Fase:</strong> {{pokemon()?.fase_evolucion}}</p>
+        <p class="card-text mb-1"><strong>Peso:</strong> {{pokemon()?.peso}} kg</p>
+        <p class="card-text mb-3"><strong>Altura:</strong> {{pokemon()?.altura}} m</p>
+        <a href="#" class="btn-solid theme-primary">View pokemon detail</a>
+    </div>
+</section>
